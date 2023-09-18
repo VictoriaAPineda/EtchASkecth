@@ -11,6 +11,7 @@ body{
     align-items: center;
     
     background-color: rgb(233, 243, 255);
+    padding-top: 20px;
 }
 #enter-btn{
     padding: 2px 5px;
