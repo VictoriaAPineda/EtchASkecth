@@ -3,29 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#input-container{
-    padding: 10px;
-}
 
 #sketch-container{
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
-  
-    /* flex-wrap: wrap;   */
-}
+    width: 500px;
+    height: 500px;
 
-.square{
-    
-    border: 1px solid black;
-    width: 20px;
-    height: 20px;
+    display: grid;
 }
-
