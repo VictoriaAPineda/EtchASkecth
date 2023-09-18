@@ -14,7 +14,7 @@ function createGrid( size ){
         // add a event listener to each square
         square.addEventListener("mouseover", colorSquare);
 
-        square.style.backgroundColor = "blue" // default of color pad
+        square.style.backgroundColor = "white" // default of color pad
         // append a square before the end of the container
         containerEl.insertAdjacentElement("beforeend", square);
     }

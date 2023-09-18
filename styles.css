@@ -4,9 +4,20 @@
     box-sizing: border-box;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
 #sketch-container{
     width: 500px;
     height: 500px;
-
     display: grid;
+
+    margin-top: 20px;
+    border: 1px solid black;
 }
