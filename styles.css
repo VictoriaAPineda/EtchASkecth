@@ -10,6 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     
+    background-color: rgb(233, 243, 255);
 }
 #enter-btn{
     padding: 2px 5px;
