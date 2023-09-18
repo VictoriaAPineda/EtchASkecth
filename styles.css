@@ -11,6 +11,9 @@ body{
     align-items: center;
     
 }
+#enter-btn{
+    padding: 2px 5px;
+}
  #color-btns button,
  #btn-group button{
     padding: 4px 10px;
