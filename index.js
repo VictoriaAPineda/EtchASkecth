@@ -1,5 +1,6 @@
 let drawColor = "black"; // default color
 let isClicked = true;
+let drawingStateEl =  document.querySelector("#drawing-state");
 
 function createGrid( size ){
     let containerEl = document.querySelector("#sketch-container");
@@ -38,6 +39,10 @@ function colorSquare(){
     // "this" refers to a each square(div) the function is called upon
     if(isClicked){
         this.style.backgroundColor = drawColor;
+        drawingStateEl.textContent = "Mode: Drawing";
+
+    }else{
+        drawingStateEl.textContent = "Mode: Not Drawing";
     }
     
 }
