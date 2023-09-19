@@ -17,12 +17,18 @@ body{
 
    
 }
+input{
+    margin-top: 10px;
+    padding: 2px 5px;
+}
 #enter-btn{
     padding: 2px 5px;
+    cursor: pointer;
 }
  #color-btns button,
  #btn-group button{
     padding: 4px 10px;
+    cursor: pointer;
 }
 
 #btn-group{
@@ -51,4 +57,6 @@ body{
 
     margin-top: 20px;
     border: 1px solid black;
+
+    cursor: pointer;
 }
