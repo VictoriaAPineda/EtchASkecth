@@ -1,4 +1,5 @@
 let drawColor = "black"; // default color
+let isClicked = true;
 
 function createGrid( size ){
     let containerEl = document.querySelector("#sketch-container");
@@ -35,8 +36,21 @@ function changeGridSize(userInput){
 
 function colorSquare(){
     // "this" refers to a each square(div) the function is called upon
-    this.style.backgroundColor = drawColor;
+    if(isClicked){
+        this.style.backgroundColor = drawColor;
+    }
+    
 }
 function changeColor(colorSelected){
     drawColor = colorSelected;
 }
+
+function clearGrid(){
+    let containerEl = document.querySelector("#sketch-container");
+    let square = containerEl.querySelectorAll("div"); // selects all divs in container
+    square.forEach((d) => d.style.backgroundColor ="white"); // clears prev. container to prep for  new one
+}
+
+document.querySelector('#sketch-container').addEventListener('click',()=>{
+    isClicked = !isClicked;
+});
