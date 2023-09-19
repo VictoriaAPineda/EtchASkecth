@@ -1,3 +1,5 @@
+let drawColor = "black"; // default color
+
 function createGrid( size ){
     let containerEl = document.querySelector("#sketch-container");
     let square = containerEl.querySelectorAll("div"); // selects all divs in container
@@ -33,6 +35,8 @@ function changeGridSize(userInput){
 
 function colorSquare(){
     // "this" refers to a each square(div) the function is called upon
-    this.style.backgroundColor = "red";
+    this.style.backgroundColor = drawColor;
 }
-
+function changeColor(colorSelected){
+    drawColor = colorSelected;
+}
