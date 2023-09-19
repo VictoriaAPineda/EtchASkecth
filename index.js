@@ -46,6 +46,7 @@ function colorSquare(){
     }
     
 }
+// changes drawing color based on button
 function changeColor(colorSelected){
     drawColor = colorSelected;
 }
@@ -55,7 +56,7 @@ function clearGrid(){
     let square = containerEl.querySelectorAll("div"); // selects all divs in container
     square.forEach((d) => d.style.backgroundColor ="white"); // clears prev. container to prep for  new one
 }
-
+// check to see if user has clicked within the canvas area
 document.querySelector('#sketch-container').addEventListener('click',()=>{
     isClicked = !isClicked;
 });
